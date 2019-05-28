@@ -1,7 +1,25 @@
 
-public class AlunoGraduacao extends Aluno {
+public class AlunoGraduacao{
     
+    private String nome;
+    private String matricula;  
     private String disciplina;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
 
     public String getDisciplina() {
         return disciplina;
@@ -11,11 +29,11 @@ public class AlunoGraduacao extends Aluno {
         this.disciplina = disciplina;
     }
 
-    public AlunoGraduacao(String disciplina, String nome, String matricula) {
-        super(nome, matricula);
+    public AlunoGraduacao(String nome, String matricula, String disciplina) {
+        this.nome = nome;
+        this.matricula = matricula;
         this.disciplina = disciplina;
     }
-    
-    
+
     
 }

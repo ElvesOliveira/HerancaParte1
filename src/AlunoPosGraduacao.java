@@ -1,20 +1,8 @@
 
-public class AlunoPosGraduacao extends Aluno {
-    
-    private String disciplina;
+public class AlunoPosGraduacao extends AlunoGraduacao {
 
-    public String getDisciplina() {
-        return disciplina;
+    public AlunoPosGraduacao(String nome, String matricula, String disciplina) {
+        super(nome, matricula, disciplina);
     }
-
-    public void setDisciplina(String disciplina) {
-        this.disciplina = disciplina;
-    }
-
-    public AlunoPosGraduacao(String disciplina, String nome, String matricula) {
-        super(nome, matricula);
-        this.disciplina = disciplina;
-    }
-    
-    
+  
 }
